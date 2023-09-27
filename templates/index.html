@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Car Price Predictor</title>
+</head>
+<body>
+    <h1>Car Price Predictor</h1>
+    <form action="/predict" method="POST">
+        <label for="present_price">Present Price</label>
+        <input type="number" name="Present_Price" required><br><br>
+
+        <label for="age_of_the_car">age_of_the_car</label>
+        <input type="number" name="age_of_the_car" required><br><br>
+
+        <label for="fuel_type">Fuel Type:<select name="Fuel_Type" required>
+            <option value="0">Petrol</option>
+            <option value="1">Diesel</option>
+            <option value="2">CNG</option>
+        </select></label>
+
+        <label for="kms_driven">Kilometers Driven:</label>
+        <input type="number" name="Kms_Driven" required><br><br>
+
+        <label for="seller_type">Seller Type:<select name="Seller_Type" required>
+            <option value="0">Dealer</option>
+            <option value="1">Individual</option>
+        </select></label>
+
+        <label for="transmission">Transmission:<select name="Transmission" required>
+            <option value="0">Manual</option>
+            <option value="1">Automatic</option>
+        </select></label>
+
+        <label for="owner">Owner:</label>
+        <input type="number" name="Owner" required><br><br>
+
+        <button type="submit">Predict Selling Price</button>
+    </form>
+</body>
+</html>
